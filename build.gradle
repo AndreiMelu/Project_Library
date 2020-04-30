@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+application {
+    mainClassName = 'wantsome.project.Main'
+}
+
+run {
+    standardInput = System.in
+}
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.xerial:sqlite-jdbc:3.28.0'
+    compile 'com.sparkjava:spark-core:2.9.1'
+    compile 'com.sparkjava:spark-template-velocity:2.7.1'
+    compile 'org.slf4j:slf4j-simple:1.7.21'
+    testCompile 'junit:junit:4.12'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}

@@ -1,0 +1,63 @@
+<style>
+    body {
+        background-image: url('https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+        background-size: cover;
+    }
+    h1 {
+        text-align: center;
+        color: #33334d;
+    }
+    .form {
+        text-align: center;
+    }
+    .logout .btn-success{
+
+       position:fixed;
+       right:10px;
+       top:5px;
+       opacity: 0.9;
+       font-size: 12px;
+       background-color: #94b8b8;
+       padding:5px;
+    }
+</style>
+
+<br>
+<div class="form">
+    <h1>Update user</h1>
+    <br>
+    <br>
+    <form method='post'>
+        <table align="center">
+            <tr>
+                <td>Username:</td>
+                <td><input type='input' name='username' value= '$username' disabled></td>
+            </tr>
+            <tr>
+                <td>Role:</td>
+                <td><input type='input' name='role' value= '$role' disabled></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type='email' pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$' name='email' value= '$email' required autofocus></td>
+            </tr>
+            <tr>
+                <td>First name:</td>
+                <td><input type='text' name='firstName' value= '$firstName' disabled></td>
+            </tr>
+            <tr>
+                <td>Last name:</td>
+                <td><input type='text' name='lastName' value= '$lastName' required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type='password' name='password' value= '' placeholder='unchanged'></td>
+            </tr>
+        </table>
+          <a  href="/admin/main" class='logout'>
+                                <button type="button" class='btn-success' >Back! </button>
+                            </a>
+        <br>
+        <input type='submit' value='UPDATE'>
+    </form>
+</div>

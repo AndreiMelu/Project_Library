@@ -1,0 +1,51 @@
+<html>
+<head>
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+    table {
+        border-collapse: collapse;
+        width: 50%;
+    }
+</style>
+
+</head>
+
+<body style='background-color: #DDFFDD'>
+
+<table>
+<tr>
+<th>ID</th>
+<th>FirstName</th>
+<th>LastName</th>
+<th>Email</th>
+<th>Username</th>
+<th>Password</th>
+<th>CreatedAt</th>
+<th>UpdatedAt</th>
+<th>Role</th>
+<th>Delete User</th>
+<th>Update User</th>
+</tr>
+#foreach ($user in $users)
+<tr>
+    <td>$user.getId()</td>
+    <td>$user.firstName</td>
+    <td>$user.lastName</td>
+    <td>$user.email</td>
+    <td>$user.username</td>
+    <td>$user.password</td>
+    <td>$user.createdAt</td>
+    <td>$user.updatedAt</td>
+    <td>$user.role</td>
+    <td><a href="unregister/$user.id">Delete User</a></td>
+    <td><a href="update/$user.id">Update User</a></td>
+</tr>
+#end
+
+</table>
+
+</body>
+</html>

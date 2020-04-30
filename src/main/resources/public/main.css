@@ -1,0 +1,104 @@
+body{
+overflow: scroll;
+background-image: url('background.jpg');
+background-repeat: repeat-y;
+background-size: cover;
+}
+th{
+border: 1px solid black;
+}
+
+td{
+width: 250px;
+padding:10px;
+background-color: #b3cbcb;
+border: 1px solid black;
+}
+
+td:hover{
+}
+
+.row{
+position: absolute;
+z-index: 1;
+top: 0;
+overflow-x: hidden;
+padding-top: 20px;
+}
+
+.left{
+position: fixed;
+float:left;
+width: 240px;
+padding:50px;
+left:0;
+}
+
+.right{
+float:left;
+text-decoration:none;
+padding:10px;
+left:240px;
+right:25px;
+}
+
+.button{
+display: inline-block;
+padding: 15px 20px;
+font-size: 24px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #fff;
+background-color: #679898;
+border: none;
+border-radius: 15px;
+box-shadow: 0 7px #777;
+}
+
+.button:hover {background-color: #527f94}
+.button:active{
+background-color: #15455b;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+.buttonSearch{
+background-color: #95b7b7;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+border: none;
+border-radius: 10px;
+box-shadow: 0 4px #777;
+font-size: 14px;
+}
+
+.buttonSearch:hover {background-color: #679898}
+.buttonSearch:active{
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+.logout{
+font-size: 12px;
+position:fixed;
+right:10px;
+top:5px;
+opacity: 0.9;
+font-size: 12px;
+background-color: #95b7b7;
+padding:5px;
+text-align: center;
+text-decoration: none;
+border: none;
+border-radius: 10px;
+box-shadow: 0 4px #777;
+}
+
+.logout:hover {background-color: #679898}
+.logout:active {
+background-color: #3e8e41;
+}

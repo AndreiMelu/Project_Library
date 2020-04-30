@@ -1,0 +1,46 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-image: url('bg2.jpeg');
+        background-size: cover;
+    }
+
+    .login-box {
+        position: relative;
+        left: 30px;
+    }
+
+    h1 {
+        color: #3d5c5c;
+    }
+
+    input[type=text] input[type=password] {
+        width: 20%;
+        padding: 12px 28px;
+        font-size: 24px;
+        padding: 10px;
+        opacity: 0.7px
+    }
+</style>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<form method='post' autocomplete="on">
+    <div class="login-box" align="center">
+        <h1>LOGIN</h1>
+        <div class="textbox">
+            <input type="text" placeholder="Username" name="username" required autofocus>
+        </div>
+        <div class="textbox">
+            <input type="password" placeholder="Password" name="password" required>
+        </div>
+        <br>
+        <input type="submit" id="button" value='Sign in!'>
+    </div>
+</form>
